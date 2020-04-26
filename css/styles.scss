@@ -1,0 +1,77 @@
+$darkest: #343a40;
+$darker: #b5b8bb;
+
+@mixin borderBox {
+    border:  1px solid $darkest;
+    border-radius: 5px;
+    box-shadow: lightgrey 1px 1px 10px;
+}
+
+navbar.navbar {
+    padding: 0px;
+    &.dark {
+        background-color: $darkest;
+        margin-bottom: 22px;
+    }
+    .nav-tabs {
+        border-bottom: none;    
+        .nav-item {
+            margin-right: -1px;
+            margin-bottom: -2px;
+        }
+        .nav-link {
+            border: 1px solid $darkest;
+            color: $darkest;
+            
+            &.active {
+                border-bottom: none;
+            }
+            &:not(.active) {
+                background-color: floralwhite;
+            }
+            &:not(.active):hover {
+                border-color: black;
+                background-color: $darkest;
+                color: white;
+            }
+            
+            &.active {
+                color: black;
+                border-width: 1px;
+                border-color: black black #fff;
+            }
+        }
+
+        &:not(:last-child) .nav-link {
+            border-bottom: 1px solid white;
+        }
+    }
+}
+
+
+.tab-content {
+    .tab-pane {
+        @include borderBox; 
+        .box {
+            @include borderBox;
+            margin: 20px;
+            padding: 20px 40px;
+            &:hover {
+                box-shadow: none;
+                transition: box-shadow 0.5s ease;
+            }
+
+            span {
+                display: block;
+                margin-bottom: 22px;
+            }
+            .grey {
+                background-color: floralwhite;
+            }
+            table {
+                border: 1px solid $darkest;
+            }
+        }
+    }
+    
+}

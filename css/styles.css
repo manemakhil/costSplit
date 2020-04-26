@@ -1,0 +1,48 @@
+navbar.navbar {
+  padding: 0px; }
+  navbar.navbar.dark {
+    background-color: #343a40;
+    margin-bottom: 22px; }
+  navbar.navbar .nav-tabs {
+    border-bottom: none; }
+    navbar.navbar .nav-tabs .nav-item {
+      margin-right: -1px;
+      margin-bottom: -2px; }
+    navbar.navbar .nav-tabs .nav-link {
+      border: 1px solid #343a40;
+      color: #343a40; }
+      navbar.navbar .nav-tabs .nav-link.active {
+        border-bottom: none; }
+      navbar.navbar .nav-tabs .nav-link:not(.active) {
+        background-color: floralwhite; }
+      navbar.navbar .nav-tabs .nav-link:not(.active):hover {
+        border-color: black;
+        background-color: #343a40;
+        color: white; }
+      navbar.navbar .nav-tabs .nav-link.active {
+        color: black;
+        border-width: 1px;
+        border-color: black black #fff; }
+    navbar.navbar .nav-tabs:not(:last-child) .nav-link {
+      border-bottom: 1px solid white; }
+
+.tab-content .tab-pane {
+  border: 1px solid #343a40;
+  border-radius: 5px;
+  box-shadow: lightgrey 1px 1px 10px; }
+  .tab-content .tab-pane .box {
+    border: 1px solid #343a40;
+    border-radius: 5px;
+    box-shadow: lightgrey 1px 1px 10px;
+    margin: 20px;
+    padding: 20px 40px; }
+    .tab-content .tab-pane .box:hover {
+      box-shadow: none;
+      transition: box-shadow 0.5s ease; }
+    .tab-content .tab-pane .box span {
+      display: block;
+      margin-bottom: 22px; }
+    .tab-content .tab-pane .box .grey {
+      background-color: floralwhite; }
+    .tab-content .tab-pane .box table {
+      border: 1px solid #343a40; }
